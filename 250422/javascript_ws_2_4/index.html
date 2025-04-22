@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const roles = ['주연배우', '조연배우', '주연배우', '우정출연', '우정출연', '조연배우']
+    const names = ['홍길동', '이춘향', '금나래', '장보고', '임꺽정', '강감찬']
+    
+    let length = 0
+    for (name in names) {
+      length += 1
+    }
+    // console.log(length)
+
+    let cnt = 0
+    while (cnt < length) {
+      if (roles[cnt] === '주연배우') {
+        console.log(`주연배우 : ${names[cnt]} 님 반갑습니다!`)
+      }
+      else if (roles[cnt] === '조연배우') {
+        console.log(`${names[cnt]} 님 환영합니다!`)
+      }
+      else if (roles[cnt] === '우정출연') {
+        console.log(`${names[cnt]} 님 와 주셔서 감사합니다!`)
+      }
+      cnt += 1
+    }
+  </script>
+</body>
+</html>
