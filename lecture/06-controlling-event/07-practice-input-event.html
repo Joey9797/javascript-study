@@ -22,8 +22,8 @@
       // 3. 콜백 함수 (input 요소에 input 이벤트가 발생할때마다 실행할 코드)
       const inputHandler = function (event) {
         // 3.1 작성하는 데이터가 어디에 누적되고 있는지 찾기
-        console.log(event);
-        console.log(event.currentTarget);
+        // console.log(event);
+        // console.log(event.currentTarget);
         console.log(event.currentTarget.value);
         // 3.2 p요소의 컨텐츠에 작성하는 데이터를 추가
         pTag.textContent = event.currentTarget.value
