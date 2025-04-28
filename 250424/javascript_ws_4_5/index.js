@@ -94,9 +94,15 @@ function buttonClickHandler(player1Choice) {
 }
 
 // 버튼 이벤트 등록
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const player1Choice = button.id.split('-')[0]  // id: scissors-button => 'scissors'
-    buttonClickHandler(player1Choice)
+buttons.forEach(function (button) {
+  button.addEventListener('click', function () {
+    if (button.id === 'scissors-button') {
+      buttonClickHandler('scissors')
+    } else if (button.id === 'rock-button') {
+      buttonClickHandler('rock')
+    } else if (button.id === 'paper-button') {
+      buttonClickHandler('paper')
+    }
   })
 })
+  

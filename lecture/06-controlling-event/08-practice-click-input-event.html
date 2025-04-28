@@ -39,14 +39,14 @@
       h1Tag.classList.add('blue')
 
       // 2. toggle 방법
-      // h1Tag.classList.toggle('blue')
+      h1Tag.classList.toggle('blue')
 
       // 3. if 방법
-      // if (h1Tag.classList.value) {
-      //   h1Tag.classList.remove('blue')
-      // } else {
-      //   h1Tag.classList.add('blue')
-      // }
+      if (h1Tag.classList.value) {
+        h1Tag.classList.remove('blue')
+      } else {
+        h1Tag.classList.add('blue')
+      }
     }
 
     btn.addEventListener('click', clickHandler)
