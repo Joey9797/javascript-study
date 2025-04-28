@@ -1,0 +1,34 @@
+<!-- cat-api.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    axios({
+      method: 'get',
+      // 1. 실패한 경우
+      url: '잘못된 경로',
+      // 2. 성공한 경우
+      // url: 'https://api.thecatapi.com/v1/images/search',
+    })
+      .then((response) => {
+        console.log(response)
+        console.log(response.data)
+      })
+      .catch((error) => {
+        console.log(error)
+        console.log('실패했다옹')
+      })
+    console.log('야옹야옹')
+  </script>
+</body>
+
+</html>
