@@ -13,18 +13,11 @@
   <script>
     console.log('작업 1 시작')
 
-    // const asyncTask = function (callBack) {
-    //   setTimeout(() => {
-    //     callBack('작업 완료')
-    //   }, 3000)
-    // }
-    const asyncTask = function (function resultFunc () {
+    const asyncTask = function (callBack) {
       setTimeout(() => {
-        console.log('작업 완료')
+        callBack('작업 완료')
       }, 3000)
-    })
-      
-
+    }
 
     asyncTask((result) => {
       console.log(result)
